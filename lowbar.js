@@ -12,4 +12,18 @@ _.uniq = arr => {
   return [...new Set(arr)];
 };
 
+_.map = (obj, func = _.identity) => {
+  const outArr = [];
+  for (let prop in obj) {
+    outArr.push(func(obj[prop]));
+  }
+  return outArr;
+};
+
+_.forEach = (obj, func = _.identity) => {
+  for (let prop in obj) {
+    func(obj[prop], prop);
+  }
+};
+
 module.exports = _;
