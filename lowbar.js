@@ -8,4 +8,8 @@ _.take = (arr, n = 1) => {
   return arr.slice(0, n);
 };
 
+_.uniq = arr => {
+  return [...new Set(arr)];
+};
+
 module.exports = _;

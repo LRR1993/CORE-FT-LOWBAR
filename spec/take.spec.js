@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 const _ = require('../lowbar');
 
-describe('take n elements of array', () => {
+describe('#take', () => {
   it('returns an empty array', () => {
     expect(_.take([])).to.eql([]);
   });
