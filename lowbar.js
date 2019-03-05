@@ -36,4 +36,10 @@ _.filter = (obj, pred = _.identity) => {
   return outArr;
 };
 
+_.reduce = (obj, iteratee = _.identity, acc = Object.values(obj)[0]) => {
+  let outValue = acc;
+
+  return outValue;
+};
+
 module.exports = _;

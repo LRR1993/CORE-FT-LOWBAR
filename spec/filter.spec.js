@@ -2,7 +2,7 @@ const { expect } = require('chai');
 const sinon = require('sinon');
 const _ = require('../lowbar');
 
-describe.only('#filter', () => {
+describe('#filter', () => {
   it('does not mutate input array', () => {
     const arr = [];
     expect(_.filter(arr)).to.not.equal(arr);
