@@ -26,4 +26,14 @@ _.forEach = (obj, func = _.identity) => {
   }
 };
 
+_.filter = (obj, pred = _.identity) => {
+  const outArr = [];
+  for (let prop in obj) {
+    if (pred(obj[prop])) {
+      outArr.push(obj[prop]);
+    }
+  }
+  return outArr;
+};
+
 module.exports = _;
